@@ -1,0 +1,9 @@
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/uninstall.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/warehouse_automation_uninstall.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/test.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/edit_cache.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/rebuild_cache.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/list_install_components.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/install.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/install/local.dir
+/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation/CMakeFiles/install/strip.dir

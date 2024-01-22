@@ -1,0 +1,315 @@
+[0.048s] Invoking command in '/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/askv/ros_ws/src/warehouse_automation -DCMAKE_INSTALL_PREFIX=/home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation
+[0.086s] -- The C compiler identification is GNU 11.4.0
+[0.128s] -- The CXX compiler identification is GNU 11.4.0
+[0.133s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.188s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.188s] -- Detecting C compile features
+[0.188s] -- Detecting C compile features - done
+[0.191s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.255s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.255s] -- Detecting CXX compile features
+[0.256s] -- Detecting CXX compile features - done
+[0.257s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.390s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.454s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.484s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.487s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.493s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.504s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.519s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.575s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.577s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.647s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.666s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.701s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.707s] -- Looking for pthread.h
+[0.759s] -- Looking for pthread.h - found
+[0.760s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.813s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.814s] -- Found Threads: TRUE  
+[0.958s] -- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+[0.959s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.967s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.968s] -- Checking for module 'bullet>=2.82'
+[0.976s] --   Found bullet, version 3.05
+[1.043s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.073s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.086s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.105s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.116s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.118s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.123s] -- Searching for dependencies of ignition-math6
+[1.124s] -- Looking for OGRE...
+[1.124s] -- OGRE_PREFIX_WATCH changed.
+[1.129s] -- Checking for module 'OGRE'
+[1.137s] --   Found OGRE, version 1.9.0
+[1.157s] -- Found Ogre Ghadamon (1.9.0)
+[1.161s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.169s] -- Looking for OGRE_Paging...
+[1.173s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.173s] -- Looking for OGRE_Terrain...
+[1.176s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.176s] -- Looking for OGRE_Property...
+[1.180s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.180s] -- Looking for OGRE_RTShaderSystem...
+[1.183s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.183s] -- Looking for OGRE_Volume...
+[1.187s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.187s] -- Looking for OGRE_Overlay...
+[1.190s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.261s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.263s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.263s] -- Searching for dependencies of ignition-transport8
+[1.276s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.283s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.287s] -- Checking for module 'libzmq >= 4'
+[1.295s] --   Found libzmq , version 4.3.4
+[1.319s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.323s] -- Checking for module 'uuid'
+[1.331s] --   Found uuid, version 2.37.2
+[1.352s] -- Found UUID: TRUE  
+[1.353s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.354s] -- Searching for dependencies of ignition-msgs5
+[1.367s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.370s] -- Checking for module 'tinyxml2'
+[1.379s] --   Found tinyxml2, version 9.0.0
+[1.400s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.401s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.402s] -- Searching for dependencies of ignition-common3
+[1.402s] -- Looking for dlfcn.h - found
+[1.402s] -- Looking for libdl - found
+[1.404s] -- Found DL: TRUE  
+[1.411s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.412s] -- Searching for <ignition-common3> component [graphics]
+[1.413s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.413s] -- Searching for dependencies of ignition-common3-graphics
+[1.414s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.416s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.416s] -- Searching for dependencies of ignition-fuel_tools4
+[1.466s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.472s] -- Checking for module 'jsoncpp'
+[1.481s] --   Found jsoncpp, version 1.9.5
+[1.502s] -- Found JSONCPP: TRUE  
+[1.506s] -- Checking for module 'libzip'
+[1.514s] --   Found libzip, version 1.7.3
+[1.536s] -- Found ZIP: TRUE  
+[1.536s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.537s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.537s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.539s] -- Gazebo version: 11.10
+[1.540s] -- Checking for module 'tbb'
+[1.548s] --   Found tbb, version 2021.5.0
+[1.573s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.651s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.651s] -- Configured cppcheck include dirs: 
+[1.651s] -- Configured cppcheck exclude dirs and/or files: 
+[1.653s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.658s] -- Added test 'lint_cmake' to check CMake code style
+[1.661s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.678s] -- Added test 'uncrustify' to check C / C++ code style
+[1.678s] -- Configured uncrustify additional arguments: 
+[1.681s] -- Added test 'xmllint' to check XML markup files
+[1.682s] -- Configuring done
+[1.686s] -- Generating done
+[1.688s] -- Build files have been written to: /home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation
+[1.697s] Invoked command in '/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/askv/ros_ws/src/warehouse_automation -DCMAKE_INSTALL_PREFIX=/home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation
+[1.699s] Invoking command in '/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation -- -j8 -l8
+[1.730s] Invoked command in '/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation -- -j8 -l8
+[1.753s] Invoking command in '/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation
+[1.758s] -- Install configuration: ""
+[1.758s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/launch
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/launch/no_roof_small_warehouse.launch.py
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/launch/small_warehouse.launch.py
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/model.config
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png
+[1.759s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/model.sdf
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/meshes
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/model.config
+[1.760s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/materials
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/model.sdf
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/meshes
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/model.config
+[1.761s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/materials
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/materials/textures
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/model.sdf
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/meshes
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/model.config
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/materials
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures
+[1.762s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/model.sdf
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/meshes
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/model.config
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/materials
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/materials/textures
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png
+[1.763s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/model.sdf
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/meshes
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/model.config
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/materials
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/materials/textures
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png
+[1.764s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png
+[1.765s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/model.sdf
+[1.765s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/meshes
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/model.config
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/materials
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/materials/textures
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/model.sdf
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/meshes
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE
+[1.766s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_Bucket_01/.DS_Store
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/model.config
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/materials
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png
+[1.767s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/model.sdf
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/meshes
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01
+[1.768s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/model.config
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/materials
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/materials/textures
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png
+[1.769s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/model.sdf
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/meshes
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/model.config
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/textures
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png
+[1.770s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png
+[1.771s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png
+[1.771s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd
+[1.772s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/model.sdf
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/meshes
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/.DS_Store
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/model.config
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/materials
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/materials/textures
+[1.773s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/model.sdf
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/meshes
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/model.config
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/materials
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/materials/textures
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png
+[1.774s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/model.sdf
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/meshes
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/model.config
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/materials
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures
+[1.775s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/model.sdf
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/meshes
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/model.config
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials/textures
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png
+[1.776s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/model.sdf
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/meshes
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/models/aws_robomaker_warehouse_ShelfE_01/.DS_Store
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/worlds
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/worlds/no_roof_small_warehouse
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/worlds/no_roof_small_warehouse/no_roof_small_warehouse.world
+[1.777s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/worlds/small_warehouse
+[1.778s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/worlds/small_warehouse/small_warehouse.world
+[1.778s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps
+[1.778s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/002
+[1.778s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/002/map.yaml
+[1.778s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/002/map.pgm
+[1.779s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/005
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/005/map_rotated.pgm
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/005/map.yaml
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/005/map_rotated.png
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/005/map.pgm
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/maps/.DS_Store
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/rviz
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/rviz/basic_data.rviz
+[1.780s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/environment/aws_robomaker_small_warehouse_world.dsv
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/ament_index/resource_index/package_run_dependencies/warehouse_automation
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/ament_index/resource_index/parent_prefix_path/warehouse_automation
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/environment/ament_prefix_path.sh
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/environment/ament_prefix_path.dsv
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/environment/path.sh
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/environment/path.dsv
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/local_setup.bash
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/local_setup.sh
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/local_setup.zsh
+[1.781s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/local_setup.dsv
+[1.782s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/package.dsv
+[1.782s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/ament_index/resource_index/packages/warehouse_automation
+[1.782s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.782s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/cmake/warehouse_automationConfig.cmake
+[1.782s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/cmake/warehouse_automationConfig-version.cmake
+[1.782s] -- Installing: /home/askv/ros_ws/src/warehouse_automation/install/warehouse_automation/share/warehouse_automation/package.xml
+[1.784s] Invoked command in '/home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/askv/ros_ws/src/warehouse_automation/build/warehouse_automation
