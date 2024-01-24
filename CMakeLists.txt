@@ -9,15 +9,28 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
+find_package(std_msgs REQUIRED)
+
 
 
 # Took the below implementation and copied it from AWS_repository
 find_package(gazebo_ros REQUIRED)
 
+
+
+add_executable(talker src/publish_cmdvel.cpp)
+ament_target_dependencies(talker rclcpp std_msgs)
+
+
 install(
   DIRECTORY launch models worlds maps rviz
   DESTINATION share/${PROJECT_NAME}
 )
+
+
+install(TARGETS
+  talker
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/env-hooks/aws_robomaker_small_warehouse_world.dsv.in")
 ament_export_dependencies(ament_cmake)
