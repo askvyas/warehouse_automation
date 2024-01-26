@@ -10,6 +10,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
 
 
 
@@ -19,7 +21,11 @@ find_package(gazebo_ros REQUIRED)
 
 
 add_executable(talker src/publish_cmdvel.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
+ament_target_dependencies(talker rclcpp std_msgs geometry_msgs)
+
+add_executable(mover src/velocity_publisher.cpp)
+ament_target_dependencies(mover rclcpp std_msgs geometry_msgs)
+
 
 
 install(
@@ -31,6 +37,12 @@ install(
 install(TARGETS
   talker
   DESTINATION lib/${PROJECT_NAME})
+
+  install(TARGETS
+  mover
+  DESTINATION lib/${PROJECT_NAME})
+
+
 
 ament_environment_hooks("${CMAKE_CURRENT_SOURCE_DIR}/env-hooks/aws_robomaker_small_warehouse_world.dsv.in")
 ament_export_dependencies(ament_cmake)

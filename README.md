@@ -39,6 +39,15 @@ ros2 launch warehouse_automation no_roof_small_warehouse.launch.py
 
 ```
 
+## Running a node 
+
+To move the mover node defined in velocity_publisher.cpp
+run the following 
+```
+ros2 launch warehouse_automation no_roof_small_warehouse.launch.py
+
+```
+
 
 ## Common Issues 
 Error: Gzclient process crash with exit code -6.

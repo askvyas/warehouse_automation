@@ -7,6 +7,7 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include <geometry_msgs/msg/twist.hpp>
 
 using namespace std::chrono_literals;
 
@@ -17,7 +18,8 @@ class MinimalPublisher : public rclcpp::Node
     MinimalPublisher()
     : Node("minimal_publisher"), count_(0)
     {
-      publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+    publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+
       timer_ = this->create_wall_timer(
       500ms, std::bind(&MinimalPublisher::timer_callback, this));
     }
@@ -26,9 +28,13 @@ class MinimalPublisher : public rclcpp::Node
     void timer_callback()
     {
         
-      auto message = std_msgs::msg::String();
-      message.data = "Hello, world! " + std::to_string(count_++);
-      RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+          auto message = std_msgs::msg::String();
+          message.data = "Hello, world! " + std::to_string(count_++);
+
+        
+          // RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.linear.x.c_str());
+          RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+
       publisher_->publish(message);
     }
     rclcpp::TimerBase::SharedPtr timer_;
