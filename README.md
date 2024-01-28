@@ -39,12 +39,23 @@ ros2 launch warehouse_automation no_roof_small_warehouse.launch.py
 
 ```
 
-## Running a node 
+## Running nodes
 
-To move the mover node defined in velocity_publisher.cpp
+# Mover Node
+
+To run the mover node defined in velocity_publisher.cpp
 run the following 
 ```
-ros2 launch warehouse_automation no_roof_small_warehouse.launch.py
+ros2 run warehouse_automation mover
+
+```
+
+# Watcher Node
+
+To run the watcher node defined in camera_node.cpp
+run the following 
+```
+ros2 run warehouse_automation watcher
 
 ```
 

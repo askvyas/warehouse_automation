@@ -12,8 +12,14 @@ find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
+find_package(sensor_msgs REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(image_transport REQUIRED)
 
 
+
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Took the below implementation and copied it from AWS_repository
 find_package(gazebo_ros REQUIRED)
@@ -25,6 +31,11 @@ ament_target_dependencies(talker rclcpp std_msgs geometry_msgs)
 
 add_executable(mover src/velocity_publisher.cpp)
 ament_target_dependencies(mover rclcpp std_msgs geometry_msgs)
+
+
+add_executable(watcher src/camera_node.cpp)
+ament_target_dependencies(watcher rclcpp std_msgs geometry_msgs sensor_msgs cv_bridge image_transport)
+target_link_libraries(watcher ${OpenCV_LIBS})
 
 
 
@@ -41,6 +52,11 @@ install(TARGETS
   install(TARGETS
   mover
   DESTINATION lib/${PROJECT_NAME})
+
+  install(TARGETS
+  watcher
+  DESTINATION lib/${PROJECT_NAME})
+
 
 
 
