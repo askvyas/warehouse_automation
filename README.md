@@ -60,6 +60,26 @@ ros2 run warehouse_automation watcher
 ```
 
 
+## Adjust Camera Height for TurtleBot3 Waffle
+
+To enhance the camera's field of view, I made a small modification for the height
+
+1. Open the SDF file:
+   `/opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf`
+
+2. Modify the camera height:
+```
+   xml
+   <link name="camera_rgb_frame">
+     ...
+     <!-- Adjust the Z-axis value (3rd number) in the <pose> tag to change the height -->
+     <pose>0.069 -0.047 YOUR_HEIGHT 0 0 0</pose>
+     ...
+   </link>
+
+
+```
+
 ## Common Issues 
 Error: Gzclient process crash with exit code -6.
 

@@ -28,6 +28,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
     aws_robomaker_small_warehouse_world_dir = get_package_share_directory('aws_robomaker_small_warehouse_world')
+    # modified AWS launch file to spawn turtle bot from the same launch file 
 
     turtlebot3_gazebo_dir = get_package_share_directory('turtlebot3_gazebo')
     turtlebot3_launch_file_path='/opt/ros/humble/share/turtlebot3_gazebo/launch/spawn_turtlebot3.launch.py'
