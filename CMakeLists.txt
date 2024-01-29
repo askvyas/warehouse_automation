@@ -35,6 +35,11 @@ ament_target_dependencies(mover rclcpp std_msgs geometry_msgs)
 
 add_executable(watcher src/camera_node.cpp)
 ament_target_dependencies(watcher rclcpp std_msgs geometry_msgs sensor_msgs cv_bridge image_transport)
+
+add_executable(scanner src/subscriber_node.cpp)
+ament_target_dependencies(scanner rclcpp std_msgs geometry_msgs sensor_msgs cv_bridge image_transport)
+
+
 target_link_libraries(watcher ${OpenCV_LIBS})
 
 
@@ -56,6 +61,11 @@ install(TARGETS
   install(TARGETS
   watcher
   DESTINATION lib/${PROJECT_NAME})
+  
+  install(TARGETS
+  scanner
+  DESTINATION lib/${PROJECT_NAME})
+
 
 
 

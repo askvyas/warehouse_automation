@@ -58,6 +58,17 @@ run the following
 ros2 run warehouse_automation watcher
 
 ```
+# Scanner Node
+
+This node subscribes to Laserscan topic 
+To run the mover node defined in subscriber_node.cpp
+run the following 
+
+```
+ros2 run warehouse_automation scanner
+
+```
+
 
 
 ## Adjust Camera Height for TurtleBot3 Waffle
