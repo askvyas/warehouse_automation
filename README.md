@@ -102,3 +102,8 @@ source /usr/share/gazebo/setup.sh
 ```
 
 reference : https://answers.ros.org/question/358847/cannot-launch-gzclient-on-a-launch-file-results-in-shared_ptr-assertion-error/
+
+
+## Tutorial for SLAM and Navigation using Navigation2 Stack ROS2 Humble :
+
+https://roboticsbackend.com/ros2-nav2-tutorial/
