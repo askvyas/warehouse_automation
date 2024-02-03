@@ -21,28 +21,35 @@ double frame_rate_;
     image_transport::Subscriber sub_;
     image_transport::Publisher pub_;
 
+   
     void image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg)
+{
+    cv_bridge::CvImagePtr cv_ptr;
+    try
     {
-        cv_bridge::CvImagePtr cv_ptr;
-        try
-        {
-           cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
-        }
-        catch(cv_bridge::Exception& e)
-        {
-            RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
-            return;
-        }
-        // if (cv_ptr->image.rows > 60 && cv_ptr->image.cols > 60)
-        //     cv::circle(cv_ptr->image, cv::Point(50, 50), 10, CV_RGB(255,0,0));
-        // modification to original to convert the image color space 
-        cv::cvtColor(cv_ptr->image, cv_ptr->image, cv::COLOR_BGR2RGB);
-
-
-        cv::imshow(OPENCV_WINDOW, cv_ptr->image);
-        cv::waitKey(3);
-        pub_.publish(cv_ptr->toImageMsg());
+        cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
     }
+    catch(cv_bridge::Exception& e)
+    {
+        RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+        return;
+    }
+
+    // Converting img from BGR to RGB 
+    cv::cvtColor(cv_ptr->image, cv_ptr->image, cv::COLOR_BGR2RGB);
+
+    // Resizing the image
+        const int desired_width = 320; 
+    const int desired_height = 240; 
+    cv::Mat resized_image;
+    cv::resize(cv_ptr->image, resized_image, cv::Size(desired_width, desired_height));
+
+    cv::imshow(OPENCV_WINDOW, resized_image);
+    cv::waitKey(3);
+
+    pub_.publish(cv_ptr->toImageMsg());
+}
+
 
 
 public:
