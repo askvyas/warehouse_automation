@@ -39,8 +39,8 @@ double frame_rate_;
     cv::cvtColor(cv_ptr->image, cv_ptr->image, cv::COLOR_BGR2RGB);
 
     // Resizing the image
-        const int desired_width = 320; 
-    const int desired_height = 240; 
+        const int desired_width = 1024; 
+    const int desired_height = 1024; 
     cv::Mat resized_image;
     cv::resize(cv_ptr->image, resized_image, cv::Size(desired_width, desired_height));
 
